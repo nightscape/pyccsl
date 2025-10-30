@@ -142,16 +142,11 @@ Four-level performance indicator:
 
 1. Download the script:
 ```bash
-curl -O https://raw.githubusercontent.com/wolfdenpublishing/pyccsl/main/pyccsl.py
-chmod +x pyccsl.py
+curl https://raw.githubusercontent.com/wolfdenpublishing/pyccsl/main/pyccsl.py -o ~/.claude/pyccsl.py
+chmod +x ~/.claude/pyccsl.py
 ```
 
-2. Copy to Claude directory:
-```bash
-cp pyccsl.py ~/.claude/
-```
-
-3. Configure Claude Code by editing `~/.claude/settings.json`:
+2. Configure Claude Code by editing `~/.claude/settings.json`:
 ```json
 {
   "statusLine": {
