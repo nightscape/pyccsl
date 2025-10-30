@@ -164,15 +164,10 @@ Use the `--env` option and you can change your status line at any time *while Cl
 
 1. Download the example .env file:
 ```bash
-curl -O https://raw.githubusercontent.com/wolfdenpublishing/pyccsl/main/pyccsl.env.example
+curl https://raw.githubusercontent.com/wolfdenpublishing/pyccsl/main/pyccsl.env.example -o  ~/.claude/pyccls.env
 ```
 
-2. Copy to Claude directory:
-```bash
-cp pyccsl.env.example ~/.claude/pyccls.env
-```
-
-3. Modify the hook command in `~/.claude/settings.json`:
+2. Modify the hook command in `~/.claude/settings.json`:
 ```json
 {
   "statusLine": {
